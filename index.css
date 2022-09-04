@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(21, 98, 185),
+    rgb(10, 22, 126)
+  );
+}
+
+.form {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%; */
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  /* transform: translate(-50%, -50%); */
+}
+
+fieldset {
+  border: 0.25rem solid dodgerblue;
+}
+legend {
+  padding: 0.6rem;
+  text-align: center;
+  background-color: dodgerblue;
+  border: 0.1rem solid dodgerblue;
+  border-radius: 0.5rem;
+}
+
+.form-input {
+  position: relative;
+  margin-top: 2.5rem;
+}
+.input-user {
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  background: none;
+  border: none;
+  border-bottom: 0.1rem solid white;
+  outline: none;
+}
+.label-input-text {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-user:focus ~ .label-input-text,
+.input-user:valid ~ .label-input-text {
+  top: -1.25rem;
+  font-size: 0.85rem;
+  color: dodgerblue;
+}
+
+#birth-date {
+  padding: 0.5rem 0.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.925rem;
+  outline: none;
+}
+
+#form-btn {
+  display: flex;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+#btn-send {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 93, 192),
+    rgb(120, 22, 231)
+  );
+  border: none;
+  border-radius: 0.5rem;
+}
+#btn-send:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 71, 146),
+    rgb(100, 20, 173)
+  );
+}
+/* @media (min-width: 425px) {
+  .form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    width: 35%;
+  }
+} */
